@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>实时通信</title>
+</head>
+<body>
+  <h2>实时聊天</h2>
+  <input id="userid" placeholder="请输入用户名">
+  <button onclick="login()">登录</button>
+  <div id="chat"></div>
+  <input id="message" placeholder="输入消息">
+  <button onclick="sendText()">发送</button>
+  <input type="file" id="image" onchange="sendImage()">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
